@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "投票",
+  "usingComponents": {
+    "tabs": "/components/tabs/index",
+    "tabpanel": "/components/tabpanel/index",
+    "card": "/components/card/index",
+    "icon": "/components/icon/index",
+    "tag": "/components/tag/index"
+  }
+}
