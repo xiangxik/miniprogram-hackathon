@@ -1,1 +1,4 @@
 /**app.wxss**/
+.container {
+  margin-bottom: 140rpx;
+}

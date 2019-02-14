@@ -1,95 +1,56 @@
 <!--pages/vote/vote.wxml-->
+<view class="container">
 
-
-
-<tabs l-class-header="swipeable-header" l-class-inactive="swipeable-class-inactive" l-class-active="swipeable-class-active" active-key="one" bind:linchange="changeTabs" swipeable has-line="{{false}}">
-  <tabpanel tab="活动" key="one" slot="one">
-    <view class="tab-content">
-
-      <card type="cover" l-class="card" image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1549736747027&di=8e75e11a150193e0f8a555e107f921eb&imgtype=0&src=http%3A%2F%2Fwww.lanxu.net%2Fuploads%2Fallimg%2F20190201%2F201902010602093105.jpg"
-        title="年味儿的科技大升级">
-        <view class="content">
-          一部分人回乡，一部分人把父母接到了身边,还有一部分人，干脆把假期变成了真正属于自己的时间。总有- -些科技，升级了生活方式，延展了过年形式的体验，还有一些欲...
-        </view>
-      </card>
-
-      <card type="cover" l-class="card" image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1549736747027&di=8e75e11a150193e0f8a555e107f921eb&imgtype=0&src=http%3A%2F%2Fwww.lanxu.net%2Fuploads%2Fallimg%2F20190201%2F201902010602093105.jpg"
-        title="年味儿的科技大升级">
-        <view class="content">
-          一部分人回乡，一部分人把父母接到了身边,还有一部分人，干脆把假期变成了真正属于自己的时间。总有- -些科技，升级了生活方式，延展了过年形式的体验，还有一些欲...
-        </view>
-      </card>
-
-    </view>
-  </tabpanel>
-  <tabpanel tab="IDEA" key="two" slot="two">
-    <view class="tab-content">
-
-
-      <card type="avatar" l-class="card" image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1549711852726&di=6b454cec0b57f62d46089487454fa56f&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201609%2F14%2F20160914062816_SC8KU.jpeg"
-        title="七月在夏天" describe="18个小时前">
-        <view class="avter-content">
-          很简单，豆瓣现在这样就给大家指了一条明路:以后凡是这种国产的风口浪尖的的片子，会涉及到各方背后利益关系的片子...
-        </view>
-        <view class="avter-share-container">
-          <view class="like-container">
-            <icon name="like" color="#666" size="28" />
-            <view class="number">160喜欢</view>
+  <l-tabs bind:linchange="changeTabs" l-class-header-line="header-line">
+    <l-tabpanel tab="活动" key="one" slot="one">
+      <view class="tab-content">
+          <l-card url="/pages/activity/activity" type="cover" l-class="card" image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1549736747027&di=8e75e11a150193e0f8a555e107f921eb&imgtype=0&src=http%3A%2F%2Fwww.lanxu.net%2Fuploads%2Fallimg%2F20190201%2F201902010602093105.jpg"
+            title="第三次Hackathon活动报名">
+            <view class="content">
+              第三次活动开始报名，请大家尽快报名，过时不侯，截止时间到2019/03/18...
+            </view>
+          </l-card>
+      </view>
+    </l-tabpanel>
+    <l-tabpanel tab="想法" key="two" slot="two">
+      <view class="tab-content">
+        <l-card url="/pages/idea/idea" type="avatar" l-class="card" image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1549711852726&di=6b454cec0b57f62d46089487454fa56f&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201609%2F14%2F20160914062816_SC8KU.jpeg"
+          title="Ken X X Kong" describe="18个小时前">
+          <view class="avter-content">
+            关于自动判断内存泄漏工具的研究..
           </view>
-          <view class="like-container">
-            <icon name="default" color="#666" size="28" />
-            <view class="number">10评论</view>
+          <view class="avter-share-container">
+            <view class="like-container">
+              <l-icon name="like" color="#666" size="28" />
+              <view class="number">160喜欢</view>
+            </view>
+            <view class="like-container">
+              <l-icon name="default" color="#666" size="28" />
+              <view class="number">10评论</view>
+            </view>
           </view>
-        </view>
-        <tag shape="circle" bg-color="#f3f3f3" font-color="#3963BC" slot="more" size="large">+ 关注</tag>
-      </card>
+          <l-tag shape="circle" bg-color="#f3f3f3" font-color="#3963BC" slot="more" size="large">+ 关注</l-tag>
+        </l-card>
 
 
-      <card type="avatar" l-class="card" image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1549711852726&di=6b454cec0b57f62d46089487454fa56f&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201609%2F14%2F20160914062816_SC8KU.jpeg"
-        title="七月在夏天" describe="18个小时前">
-        <view class="avter-content">
-          很简单，豆瓣现在这样就给大家指了一条明路:以后凡是这种国产的风口浪尖的的片子，会涉及到各方背后利益关系的片子...
-        </view>
-        <view class="avter-share-container">
-          <view class="like-container">
-            <icon name="like" color="#666" size="28" />
-            <view class="number">160喜欢</view>
+        <l-card url="/pages/idea/idea" type="avatar" l-class="card" image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1549711852726&di=6b454cec0b57f62d46089487454fa56f&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201609%2F14%2F20160914062816_SC8KU.jpeg"
+          title="Sky Source" describe="18个小时前">
+          <view class="avter-content">
+            微服务调用链监控研究...
           </view>
-          <view class="like-container">
-            <icon name="default" color="#666" size="28" />
-            <view class="number">10评论</view>
+          <view class="avter-share-container">
+            <view class="like-container">
+              <l-icon name="like" color="#666" size="28" />
+              <view class="number">160喜欢</view>
+            </view>
+            <view class="like-container">
+              <l-icon name="default" color="#666" size="28" />
+              <view class="number">10评论</view>
+            </view>
           </view>
-        </view>
-        <tag shape="circle" bg-color="#f3f3f3" font-color="#3963BC" slot="more" size="large">+ 关注</tag>
-      </card>
-
-
-      <card type="avatar" l-class="card" image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1549711852726&di=6b454cec0b57f62d46089487454fa56f&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201609%2F14%2F20160914062816_SC8KU.jpeg"
-        title="七月在夏天" describe="18个小时前">
-        <view class="avter-content">
-          很简单，豆瓣现在这样就给大家指了一条明路:以后凡是这种国产的风口浪尖的的片子，会涉及到各方背后利益关系的片子...
-        </view>
-        <view class="avter-share-container">
-          <view class="like-container">
-            <icon name="like" color="#666" size="28" />
-            <view class="number">160喜欢</view>
-          </view>
-          <view class="like-container">
-            <icon name="default" color="#666" size="28" />
-            <view class="number">10评论</view>
-          </view>
-        </view>
-        <tag shape="circle" bg-color="#f3f3f3" font-color="#3963BC" slot="more" size="large">+ 关注</tag>
-      </card>
-
-    </view>
-  </tabpanel>
-  <tabpanel tab="我的" key="three" slot="three">
-    <view class="tab-content">me</view>
-  </tabpanel>
-</tabs>
-
-
-
-
-<tabbar list="{{menus}}" />
+          <l-tag shape="circle" bg-color="#f3f3f3" font-color="#3963BC" slot="more" size="large">+ 关注</l-tag>
+        </l-card>
+      </view>
+    </l-tabpanel>
+  </l-tabs>
+</view>

@@ -8,10 +8,6 @@ Component({
       type: Boolean,
       value: true
     },
-    selected: {
-      type: Number,
-      value: 0
-    },
     color: {
       type: String,
       value: '#707070'
@@ -38,50 +34,40 @@ Component({
     }, 
     list: {
       type: Array,
-      value: []
+      value: [
+        {
+          pagePath: "/pages/vote/vote",
+          iconPath: '/images/tab-icon/discover.png',
+          selectedIconPath: '/images/tab-icon/discover_fill.png',
+          text: "投票"
+        }, {
+          pagePath: "/pages/idea/idea",
+          iconSize: 100,
+          style: 'circle',
+          iconPath: '/images/tab-icon/add.png',
+          selectedIconPath: '/images/tab-icon/add.png',
+          text: "发布想法"
+        }, {
+          pagePath: "/pages/me/me",
+          iconPath: '/images/tab-icon/my.png',
+          redDot: true,
+          selectedIconPath: '/images/tab-icon/my_fill1.png',
+          text: "我的"
+        }
+      ]
     }
   },
-  data: {
-    show: true,
-    selected: 0,
-    color: '#707070',
-    selectedColor: "#3963BC",
-    borderStyle: "#f6f6f6",
-    fontSize: '24',
-    backgroundColor: "#fff",
-    list: [
-      {
-        pagePath: "/index/index",
-        iconPath: "/image/home.png",
-        selectedIconPath: "/image/home_fill.png",
-        text: "首页"
-      }, {
-        pagePath: "/index2/index",
-        iconPath: "/image/add.png",
-        style: "circle",
-        iconSize: 100,
-        selectedIconPath: "/image/add.png",
-        text: "发布"
-      }, {
-        reddot: true,
-        pagePath: "/index3/index",
-        iconPath: "/image/my.png",
-        selectedIconPath: "/image/my_fill.png",
-        text: "我的"
-      }
-    ]
+  data : {
+    selected: 0
   },
-  attached() {
-  },
-
   methods: {
     switchTab(e) {
       const data = e.currentTarget.dataset
       const url = data.path
-      wx.switchTab({
-        url
+      wx.switchTab({ url })
+      this.setData({
+        selected: data.index
       })
-      this.showItem(data.index)
     },
     show() {
       this.setData({

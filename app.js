@@ -34,27 +34,6 @@ App({
     })
   },
   globalData: {
-    userInfo: null,
-    menus: [
-      {
-        pagePath: "/index/index",
-        iconPath: '/images/tab-icon/discover.png',
-        selectedIconPath: '/images/tab-icon/discover_fill.png',
-        text: "首页"
-      }, {
-        pagePath: "/index2/index",
-        iconSize: 100,
-        style: 'circle',
-        iconPath: '/images/tab-icon/add.png',
-        selectedIconPath: '/images/tab-icon/add.png',
-        text: "发布"
-      }, {
-        pagePath: "/index2/index",
-        iconPath: '/images/tab-icon/my.png',
-        redDot: true,
-        selectedIconPath: '/images/tab-icon/my_fill1.png',
-        text: "我的"
-      }
-    ]
+    userInfo: null
   }
 })

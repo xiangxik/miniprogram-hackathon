@@ -9,6 +9,7 @@ Component({
   properties: {
     image: String,
     title: String,
+    url: String,
     describe: String,
     plaintext: Boolean,
     full: Boolean,
