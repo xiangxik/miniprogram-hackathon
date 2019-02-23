@@ -1,2 +1,15 @@
-<!--pages/activity/activity.wxml-->
-<text>pages/activity/activity.wxml</text>
+<view class="container">
+  <view class="title">第三次Hackathon活动报名</view>
+  <view class="info">截止时间: 2019-03-20 23:59</view>
+
+  <image class="banner" src="https://raw.githubusercontent.com/xiangxik/xiangxik.github.io/master/img/hackathon3.jpg" mode="aspectFill"></image>
+
+  <rich-text class="content">
+     
+    第三次活动开始报名，请大家尽快报名，过时不侯.<br></br>
+    活动时间：2019-03-22全天<br/>
+    活动地点：TKH2 24.5<br/>
+  </rich-text>
+
+
+</view>

@@ -1,2 +1,31 @@
-<!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<view class='container'>
+  <view class='logo-container'>
+    <image class='logo-img' src="{{userInfo.avatarUrl}}"></image>
+    <text class='logo-txt'>{{userInfo.nickName}}</text>
+  </view>
+
+  <view class="section">
+    <l-grid>
+      <l-grid-item key="one" slot="one">
+        <view class="num">0</view>
+        <view class="text">我的投票</view>
+      </l-grid-item>
+      <l-grid-item key="two" slot="two">
+        <view class="num">0</view>
+        <view class="text">我的想法</view>
+      </l-grid-item>
+      <l-grid-item key="four" slot="four">
+        <view class="num">0</view>
+        <view class="text">我的评论</view>
+      </l-grid-item>
+    </l-grid>
+  </view>
+
+  <view class="section">
+    <l-list title="个人信息" icon="user" bind:lintap="clickListItem" data-key="info" />
+    <l-list title="消息" icon="notification" tag-content="0" tagShape="circle"tag-position="right" bind:lintap="clickListItem" data-key="message" />
+    <l-list title="日志" icon="history" bind:lintap="clickListItem" data-key="log" />
+    <l-list title="帮助中心" icon="help" bind:lintap="clickListItem" data-key="help" />
+  </view>
+
+</view>

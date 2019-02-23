@@ -41,7 +41,7 @@ Component({
           selectedIconPath: '/images/tab-icon/discover_fill.png',
           text: "投票"
         }, {
-          pagePath: "/pages/idea/idea",
+          pagePath: "/pages/idea/publish",
           iconSize: 100,
           style: 'circle',
           iconPath: '/images/tab-icon/add.png',
@@ -50,7 +50,6 @@ Component({
         }, {
           pagePath: "/pages/me/me",
           iconPath: '/images/tab-icon/my.png',
-          redDot: true,
           selectedIconPath: '/images/tab-icon/my_fill1.png',
           text: "我的"
         }

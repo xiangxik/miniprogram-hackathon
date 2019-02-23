@@ -1,4 +1,4 @@
 /**app.wxss**/
-.container {
-  margin-bottom: 140rpx;
+.section {
+  padding: 0rpx 20rpx 40rpx;
 }

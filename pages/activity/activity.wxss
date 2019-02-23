@@ -1,1 +1,31 @@
-/* pages/activity/activity.wxss */
+.container {
+  margin: 0rpx 20rpx;
+}
+
+.title {
+  font-size: 38rpx;
+  margin-top: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #333;
+}
+
+.content {
+  margin-top: 30rpx;
+  color: #666;
+  font-size: 30rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.banner {
+  width: 640rpx;
+  height: 280rpx;
+  margin: 0 auto;
+}
+
+.info {
+  color: #666;
+  font-size: 24rpx;
+}

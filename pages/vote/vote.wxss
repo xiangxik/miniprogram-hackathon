@@ -1,4 +1,8 @@
 /* pages/vote/vote.wxss */
+.container {
+  margin-bottom: 140rpx;
+}
+
 .card {
   margin: 20rpx auto !important;
 }

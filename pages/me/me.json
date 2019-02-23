@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "l-grid-item": "/components/grid-item/index",
+    "l-grid": "/components/grid/index",
+    "l-list": "/components/list/index"
+  }
 }
